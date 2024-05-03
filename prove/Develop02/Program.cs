@@ -1,3 +1,11 @@
+// This program resolves a difficulty in journaling where one does not know what
+// to write. This is resolved by giving a prompt to write about and then saving
+// the journal entry to a csv file.
+
+// ***The extra creativity and functionality occurs in the Journal.cs file,
+// adding csv compatability which loads journal entries from csv files able to be
+// opened in excel.
+
 using System;
 
 class Program
@@ -34,13 +42,13 @@ class Program
         }
         else if (choice == "3")
         {
-            Console.Write("What is the filename? ");
+            Console.Write("What is the csv filename? ");
             journal.LoadFile(Console.ReadLine());
 
         }
         else if (choice == "4")
         {
-            Console.Write("What is the csv filename? ");
+            Console.Write("What is the filename? ");
             journal.SaveToFile(Console.ReadLine());
         }
         } while (choice != "5");
