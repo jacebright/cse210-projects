@@ -40,7 +40,7 @@ class Program
         }
         else if (choice == "4")
         {
-            Console.Write("What is the filename? ");
+            Console.Write("What is the csv filename? ");
             journal.SaveToFile(Console.ReadLine());
         }
         } while (choice != "5");
