@@ -1,0 +1,22 @@
+journal class to have the file
+    behaviors:
+        store a list of journal entries
+
+    attributes:
+        list of entries completed
+        
+prompt class to get display a simple prompt for the user to respond to
+    behaviors:
+        generate a random prompt from a predetermined list
+
+    attributes:
+        list of prompt ideas (strings)
+entry class to get the user input
+    behaviors:
+        receive user input and save with the current date and the prompt
+
+    attributes:
+        prompt (received from the prompt generator)
+        date
+        user input (entry)
+program class to contain the whole thing
