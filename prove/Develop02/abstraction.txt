@@ -1,0 +1,29 @@
+What is abstraction and why is it important?
+
+Abstraction is taking a wide, complex concept or need and breaking it down into 
+smaller parts that are simplified and complete the wide objective. This involves
+boiling the complex situation down to only essential elements. A benefit to this
+abstraction is creating more effective code to resolve a complex problem. An
+application from this week's prove project in abstraction is taking the complex 
+problem of helping make journalling easier, and breaking it down into the
+solution of providing prompts, then abstracting that further by placing the
+essential elements into classes. Below is a code example of abstracting the need
+to create an individual entry in a journal into a class:
+
+
+public class Entry
+{
+    public string _promptText;
+    public string _date;
+    public string _entryText;
+
+    public void Display()
+    {
+        Console.WriteLine($"Date: {_date} - Prompt: {_promptText}\n{_entryText}");
+    }
+}
+
+The idea of creating a journal entry can be daunting or cumbersome at times, but
+here I have broken down that idea of a journal entry into what you write, what
+you write about, and when you write it, allowing for a simple solution to a more
+complex problem.
