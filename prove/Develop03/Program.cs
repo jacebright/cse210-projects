@@ -1,3 +1,10 @@
+// Creativity shown:
+// Created a txt file with a variety of scriptures. Added a library class to read 
+// the file and create a scripture object for each one, then the class uses a 
+// method to randomly select a scripture for memorizing.
+// Additionally I added code to only randomly hide words still showing instead
+// of attempting to hide words already hidden.
+
 using System;
 
 class Program
