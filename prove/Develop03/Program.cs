@@ -6,8 +6,7 @@ class Program
     {
         // Load the txt file with a library of scriptures to memorize a random
         // scripture
-        string scriptureLibrary = @"C:\Users\jaceb\OneDrive\Desktop\Software Development\C#\CSE210\cse210-projects\prove\Develop03\scriptures.txt";
-        Library library = new Library(scriptureLibrary);
+        Library library = new Library("scriptures.txt");
         Scripture scripture = library.GetScripture();
 
         int count = 0;
