@@ -1,0 +1,68 @@
+Week 3
+What does the program do?
+    Stores a scripture and then hides random words when indicated by the
+    user to assist with memorizing scriptures
+What user inputs does it have?
+    Type quit or hit enter with no typing
+What output does it produce?
+    Displays the scripture then displays it with some words missing
+How does the program end?
+    User typing quit or the whole scripture being hidden
+
+Classes:
+    Scripture:
+        Responsibilities:
+            List of words in the verse in order
+            Keep track of the reference
+        Behaviors:
+            Hide random words
+            Display text (some hidden, some not)
+    Reference:
+        Responsibilities:
+
+        Behaviors:
+            Getter to display the reference
+            Constructors:
+                public Reference(string book, int chapter, int verse)
+                public Reference(string book, int chapter, int startVerse, int endVerse)
+
+
+    Word:
+        Responsibilities:
+            Word in the verse
+        Behaviors:
+            Keep track of if the word is hidden
+
+
+
+public class Reference
+{
+    _Chapter
+    _Book
+    _startVerse
+    _endVerse
+
+    public Reference(_Book, _Chapter, _startVerse)
+    {
+        Book = _Book
+        Chapter = _Chapter
+        StartVerse = _startVerse
+    }
+
+
+    public Reference(_Book, _Chapter, _startVerse, _endVerse)
+        Book = _Book
+        Chapter = _Chapter
+        StartVerse = _startVerse
+        EndVerse = _endVerse
+
+    
+}
+
+    
+
+
+
+John 3:16
+
+Reference("John", 3, 16)
