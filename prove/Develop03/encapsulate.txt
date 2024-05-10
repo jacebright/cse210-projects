@@ -1,0 +1,21 @@
+Encapsulation is the process by which one separates distinct parts of code and
+keeps them isolated as often as is possible. This includes keeping variables and
+certain methods private or unseen by other classes and files unless it is 
+necessary to do the contrary. A major benefit of this encapsulation is allowing
+for easier debugging. If the program has a file not found error, and the file 
+name is typed out in each class in a major project, then one would have to
+meticulously go through each class in the project to find the typo, whereas if
+only one class is able to name and track the filename, then the other methods 
+could call on it instead of the filename being directly accessed by other
+classes. 
+An example from my code is when each word needed to have an attribute of hidden
+or shown. Both the Word class and the Scripture class use that information, but
+if they both could have access to change that information, then finding any
+errors regarding that attribute would be quite the hassle. Below is an example
+of the attribute being private in the Word class, and the Word class simply
+having a getter that the Scripture class could call on:
+private bool _isHidden = false;
+ public bool IsHidden()
+    {
+        return _isHidden;
+    }
