@@ -27,7 +27,7 @@ public class Reference
         }
         else
         {
-            string reference_string = $"{_book} {_chapter}: {_startVerse}";
+            string reference_string = $"{_book} {_chapter}:{_startVerse}";
             return reference_string;
         }
     }
