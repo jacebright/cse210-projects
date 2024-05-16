@@ -1,0 +1,46 @@
+What does the program do?
+    Provides mindfulness activities to reduce anxiety and stress during a day
+What user inputs does it have?
+    Menu options
+    duration of the activity
+What output does it produce?
+    Each separate activity
+How does the program end?
+    Quit option from Menu
+
+Base activity class
+        Behaviors:
+            Display intro message
+            Display description
+            Display ending message
+            Get duration
+            Show countdown
+        Attributes:
+            Name
+            Description
+            Duration
+        Constructor:
+            Name, Description, Duration
+    breathing class
+        Behaviors:
+            Run the breathing activity for the specified duration
+        Attributes:
+            None
+    reflection
+        Behaviors:
+            Display
+            Generate prompt
+            Generate Questions
+        Attributes:
+            Prompts list
+            Questions List
+    listing
+        Behaviors:
+            Display
+            Generate prompt
+            Count items
+        Attributes:
+            Count
+            List of Prompts
+log class - optional for creativity
+
