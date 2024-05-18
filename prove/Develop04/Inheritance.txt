@@ -1,0 +1,29 @@
+Inheritance is the concept in object oriented programming which deals with
+classes receiving attributes and methods of another class. This is used when a
+few different classes have some shared functionality. The base, or parent, class
+contains the shared functionality and the child classes have the specific needs
+of their class contained therein. A major benefit to inheritance is reduced
+redundancy. If an attribute or method in a parent class needs changed for each
+use of the child classes, the change only needs to be made in the parent class
+instead of going to each subclass and making the change. Doing this additionally
+reduces the opportunity for error. An application of Inheritance is a program 
+that keeps track of students and teachers. Both the students and the teachers
+have shared attributes, like a first name, last name, and date of birth, so
+those pieces of information would be collected in the parent class, whereas only
+teacher have classes they teach, and only students have an assigned future
+graduation date. Having the parent class would allow for the common data to be
+displayed in similar ways, while the child classes would be able to have unique
+methods to show their class schedule, assign students to teachers' classes, and
+more.
+
+An example from my code is from my Activity.cs file, which is the common
+denomenator for each of my mindfulness activities. Each activity has a common
+starting message, as shown below:
+
+ public void DisplayStartingMessage()
+    {
+        Console.Clear();
+        Console.WriteLine($"Welcome to the {_name}!");
+        Console.WriteLine($"\n{_description}\n");
+        SetDuration();
+    }
