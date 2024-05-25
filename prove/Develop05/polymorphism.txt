@@ -1,0 +1,15 @@
+Polymorphism is the concept of adaptability. A method from a base class can be 
+made to be changed by each of the derived classes and have different
+functionality in each one while having the same name. A benefit of Polymorphism
+is while having a list of objects derived from the same base class, one could 
+loop through the list and call the same method, but it will perform a unique 
+action for each object type. An example from my code this week is when I
+utilized a list of goals (of different types) and looped through each one to 
+display the details. Two of the three classes had the same functionality, but
+the method was overridden for the third class, allowing it to be called by the
+same name, but show different details.
+foreach (Goal goal in _goals)
+        {
+            Console.WriteLine($"{count}. {goal.GetDetailsString()}");
+            count +=1;
+        }
