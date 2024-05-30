@@ -1,0 +1,80 @@
+1. Abstraction with YouTube Videos
+    Separate classes
+
+    Classes:
+        Videos 
+            Track the title, author, and length (seconds) [attributes]
+            Store a list of comments [list attribute]
+            Return the number of comments [count length of list]
+        Comment
+            //3-4 each video
+            Track comment
+            Track name of commenter
+2. Encapsulation with Oline Ordering
+    Private attributes
+
+    Classes:
+        Product
+            name [string]
+            product ID [int] 
+            price [float]
+            quantity [int]
+            totalCost [method(price * quantity)]
+        Customer
+            name [string]
+            Address [class]
+            livesInUSA [method (bool)]
+                        
+        Address
+            street [string]
+            city [string]
+            state/province [string]
+            country [string]
+            USAddress [method (bool)]
+            GetAddressString [method (string)]
+        Order
+            products [list<Product>]
+            customer [Customer]
+            computeTotalOrder [foreach (Product product in products) product.totalCost()]
+            packingLabel [method (name and product ID of each product)]
+            shippingLabel [method (name and address of customer)]
+            if customer in USA, shipping = $5, else shipping = $35
+            totalPrice [method calling on totalCost]
+
+3. Inheritance with Event Planning
+    Parent and child classes
+    Protected attributes
+
+    Classes:
+        Event
+            title [string]
+            description [string]
+            date [string?]
+            time [string?]
+            address [Address]
+            standardDetails [method]
+            fullDetails [abstract method]
+            shortDescription [abstract method]
+        LectureEvent
+            speaker [string]
+            capacity [int]
+        ReceptionEvent
+            RSVPList? [list<string>]
+        OutdoorEvent
+            weather forecast [string]
+        Address
+
+4. Polymorphism with Exercise Tracking
+    Abstract
+
+    Classes:
+        Exercise
+            date []
+            length [float]
+            summary [method]
+        Running
+            distance [method]
+        StationaryBicycles
+            speed [method]
+        Swimming
+            numberofLaps [int]
