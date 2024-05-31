@@ -69,7 +69,7 @@
 
     Classes:
         Exercise
-            date []
+            date [string]
             length [float]
             summary [method]
         Running
