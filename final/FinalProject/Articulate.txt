@@ -1,0 +1,30 @@
+Abstraction is the concept of breaking core ideas down into individual parts. 
+Encapsulation is the concept of taking those individual parts and keeping them
+distinct from one another. Inheritance is the concept of taking the common
+characteristics of multiple parts and placing that in its own sphere then 
+allowing the distinct parts to gain those characteristics, simplifying the 
+assignment of those characteristics. Polymorphism is the concept of allowing 
+those characteristics and behaviors to be adjusted and tweaked for the
+individual needs of each unique part. 
+Abstraction was used in my final project by allowing each concept with unique
+behaviors and attributes to be broken into different classes that allowed for
+ease in management and execution.
+Encapsulation was used in my final project by keeping each member attribute 
+private, and some member methods private to allow for ease in debugging if any 
+problems arose.
+Inheritance was used in my final project by creating one base class that
+multiple unique classes could call upon, allowing for the removal of redundancy
+in creating methods that are identical across different classes.
+Polymorphism was used by creating a base class (activity) that different
+activities could call upon and utilize the methods in different ways. Each
+unique event provided different information that interacted with the methods in
+distinct manners.
+
+These principles allowed me to separate the important details that allow for
+ease in reusability. This was demonstrated in the second and third foundations
+that both used an address class. Because I used these principles, I was able to
+easily adjust and reuse the code, saving time and energy. Additionally, I 
+discovered, a few times, errors in my code that required adjustment. Because of
+these principles, I was able to resolve many of these errors by changing
+the error in the base class, instead of having to go through each individual 
+class to change the same mistake.
